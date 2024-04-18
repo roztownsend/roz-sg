@@ -22,55 +22,114 @@ a {
 a:hover {
   color: #ac5252;
 }
-
-nav {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 1rem;
-}
-
-nav a {
-  text-transform: capitalize;
+a:active {
+  font-weight: bold;
+  text-decoration: none;
 }
 
 body {
   margin: 0;
   display: flex;
-  place-items: stretch;
   min-width: 320px;
   min-height: 100vh;
 }
 
 .grid {
   display: grid;
-  padding: 2rem;
   text-align: center;
   margin: 0 auto;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 100%;
+  grid-template-rows: 20% 80%;
+  grid-gap: 1rem;
+  grid-template-columns: 70% 30%;
+  width: 97%;
+}
+
+header {
+  grid-row: 1;
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: baseline;
+}
+
+nav {
+  display: flex;
+  place-items: center;
   width: 100%;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 25% 1fr;
+nav a {
+  text-transform: uppercase;
+  padding: 1rem;
 }
 
-h1, h2 {
-  line-height: 1.1;
+.current-route {
+  text-decoration: none;
+  font-weight: bold;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2em;
 }
 
-h2 {
-  font-size: 4.5em;
+.bulletpoint {
+  grid-row: 2;
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.heading {
+  font-size: 4rem;
+  line-height: 1;
   text-transform: uppercase;
   word-wrap: break-word;
+  transform: translateX(100%);
 }
 
-section {
-  padding: 2rem;
+.slide-in-right {
+  transform: translateX(0%);
+  transition: transform 1s ease-in-out;
+}
+
+.digit {
+  font-size: 7rem;
+  font-weight: bold;
+  color:#f7e4e4;
+  width: 0px;
+  background-color: #af0000;
+  transition: width 1s ease-in-out;
+}
+
+.slide-in-digit {
+  width: 100%;
+  padding-right: 1rem;
+}
+
+.content {
+  grid-row: 2;
+  grid-column: 1;
   font-size: 1.25rem;
+  max-height: 70vh;
+  overflow-y: scroll;
+  text-align: left;
+  transform: translateX(-150%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slide-in-left {
+  transform: translateX(0%);
+  transition: transform 1s ease-in-out;
+}
+
+img {
+  width: 50%;
+  height: 75%;
+  object-position: center;
+  object-fit: cover;
 }
