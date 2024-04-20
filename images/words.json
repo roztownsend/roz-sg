@@ -1,0 +1,58 @@
+{ 
+"sections": {
+    "zero": {
+        "digit": "0.",
+        "header": "Howdy",
+        "content": ["My name is Roz Townsend and I am a frontend developer and human. Hello and welcome to my application for the backend developer course at Sundsgården Folkhögskola. This single-page application (or SPA) is divided into six sections, based on each of the questions required by the application. You can view the code for this SPA at its <a href=\"https://github.com/roztownsend/roz-sg\" target=\"_blank\">Github repository</a>.", 
+        "You can also view more about my professional history on my <a href=\"https://www.linkedin.com/in/rd-townsend/\" target=\"_blank\">LinkedIn page</a>. Happy reading!"]},
+    "one": {
+        "digit": "1.",
+        "header": "Why do I want to take this course?",
+        "content": 
+        ["While I like the focus on user experience and visualization of a product and its delivery that comes with being a frontend developer, let's be honest - there is no such thing as a solely front- or backend developer in terms of skills.", 
+        "The best developers are people with knowledge in both areas; a full, holistic understanding of development is necessary to really understand what's going on when you're working on one side of the stack or the other. Even the most polished frontend can't deliver their full potential if they don't fully know what is going on under-the-hood. Understanding the backend will make me a better frontend and ultimately help me bring more value to any future teams or organizations I work with."]},
+    "two": {
+        "digit": "2.",
+        "header": "Why would I be a good future developer?",
+        "content": ["I have a habit of gnawing on problems until they're solved. The dopamine hit that comes with being satisfied that you've solved a puzzle? Mmm! Love it!",
+        "I also have an innate nerdiness that gives me the drive to not only learn, but apply what I learn to pragmatically solve technical issues and ultimately better collaborate with others (external stakeholders as well as others on my team) to ensure the success of a product."]},
+    "three": {
+        "digit": "3.",
+        "header": "Personal Letter",
+        "content": ["To Whom It May Concern,",
+
+        "I am writing today to express my interest in attending in the upcoming Backend Developer course at Sundsgården Folkhögskola. With a year of experience as a frontend developer, I think it is time for me to broaden my skill set with a more holistic understanding of the web development lifecycle, making the backend program a clear choice for me.",
+        
+        "The course's focus on object-oriented programming and database management aligns perfectly with the gaps I currently have in my knowledge, as I have worked mostly with functional programming so far. I'm particularly interested in the project-based learning approach the Sundsgården curriculum utilizes, providing me with not only additional portfolio projects to help me in my future job search, but also to get in the crucial soft-skills practice that comes with successfully collaborating as part of a team.",
+        
+        "As for the admission conditions and requirements outlined for the course, my background in frontend development, coupled with my university degree and native English language proficiency, hopefully places me on solid footing as an ideal candidate for the course. I look forward to completing the admission assignment and any relevant follow-up interviews to show to you that I am ready and excited to start learning again with Sundsgården.",
+        
+        "Thanks for your time and consideration in advance. I hope to hear from you soon!",
+        
+        "Kind regards,",
+        
+        "Roz Townsend"]},
+    "four": {
+        "digit": "4.",
+        "header": "Previous Experience with Frontend Development",
+        "content": [
+            "I have about a year of experience as a professional developer. I worked as a frontend designer at Klarna briefly in a position that married design and engineering, and then for about nine months at a IaaS scale-up called Exoscale as a UX software engineer. I was also part of the 2021-22 cohort of the Sundsgården Frontend Developer Course.", 
+        
+            "My position at Klarna was mostly working on a large-scale software migration from a legacy system to a React-based templating system. I didn't spend as much time there as I liked there, but the learning went at approximately 937 million kilometers an hour and I was thankful for how much I got to learn in the short time I was there.",
+            
+            "The position at Exoscale was very different, working in the nuts-and-bolts of a legacy system in a growing company with rapid changes and external requirements. I primarly worked on designing and engineering UI components in ClojureScript. I left Exoscale a year ago to focus on my family and personal development. Now find myself wanting to learn more before jumping back into a job search."]},
+    
+    "five": {
+        "digit": "5.",
+        "header": "Project Showcase",
+        "content": ["I have recently completed was an allergy app I like to call Sneezy. You can view a live version of the app on <a href=\"https://rdtownsend.neocities.org/projects/sneezy/\" target=\"_blank\">my portfolio website</a> and the code itself in its <a href=\"https://github.com/roztownsend/sneezy\" target=\"_blank\">Github repository</a>.",
+        "The app is written in vanilla JS and had two goals: the first being to get some practice in working with JS objects, the second to have a functional allergy app to literally figure out why myself, my wife, and my cats are sneezing all the time. It works by using the air quality API, weather API and geocoding API through <a href=\"https://open-meteo.com/en/docs/\" target=\"_blank\">Open-Meteo</a> to allow the user to input a location in Europe and return the current allergy and air quality results, as well as the allergy and air quality information for a 24 hour period and a daily weather forecast.",
+        "Upon input of a location name, there is a GET request to the geocoding API, which in turn feeds the latitude and longitude coordinates to two other GET requests for air quality/allergen and daily weather data. The air quality/allergen data is mapped over various ranges corresponding to relevant levels (low, med, high, etc.) and returned as a formatted object which is then injected into the UI. The same is done with the weather data, with a map for a relevant weather icon instead of range mapping."]},
+    "six": {
+        "digit": "6.",
+        "header": "The End",
+        "content": "I know I need to include at least one image in my application to prove I know how to add them. Here are my cats, Dusty Spumoni (grey floof) and Fettuccine Alfredo or \"Freddy\" (orange tabby).",
+        "image": {"url": "./dusnfred.jpg", "altText": "Two cats sleep in a basket lined with a yellow and cream-colored blanket. The basket sits in a bright window."}
+        }
+    }
+}
